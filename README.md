@@ -14,6 +14,8 @@ docker build -t ${DOCKER_USERNAME}/xv6:amd64 --platform linux/amd64 -f Dockerfil
 
 ## Run container
 
+The below is example to run riscv64 image. Replace the platform specification and image name as needed for `arm64v8` or `amd64`.
+
 Explanation of the command:
 
 - `-it`: Run in interactive mode with a TTY.
