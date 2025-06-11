@@ -8,6 +8,7 @@ This repository is for TAs preparing the xv6 environment for students in the cou
 
 ```bash
 docker build -t ${DOCKER_USERNAME}/xv6:riscv64 --platform linux/riscv64 -f Dockerfile.riscv .
+docker build -t ${DOCKER_USERNAME}/xv6:arm64v8 --platform linux/arm64/v8 -f Dockerfile.arm64v8 .
 ```
 
 ## Run container
