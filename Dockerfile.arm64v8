@@ -7,4 +7,7 @@ RUN apt-get install -y gdb-multiarch
 RUN apt install -y gcc-riscv64-linux-gnu
 ENV TOOLPREFIX=riscv64-linux-gnu-
 
+COPY .bash_history /root/.bash_history
+COPY .inputrc /root/.inputrc
+
 CMD ["/bin/bash"]
