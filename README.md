@@ -12,6 +12,14 @@ docker build -t ${DOCKER_USERNAME}/xv6:arm64v8 --platform linux/arm64/v8 -f Dock
 docker build -t ${DOCKER_USERNAME}/xv6:amd64 --platform linux/amd64 -f Dockerfile.amd64 .
 ```
 
+### Push image
+
+```bash
+docker push ${DOCKER_USERNAME}/xv6:riscv64
+docker push ${DOCKER_USERNAME}/xv6:arm64v8
+docker push ${DOCKER_USERNAME}/xv6:amd64
+```
+
 ## Run container
 
 The below is example to run riscv64 image. Replace the platform specification and image name as needed for `arm64v8` or `amd64`.
